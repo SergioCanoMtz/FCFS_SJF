@@ -784,10 +784,10 @@ public class FCFS extends javax.swing.JFrame {
                 tpret=(tret1+tret2+tret3+tret4)/4;
 
 
-                tres1=Integer.parseInt(P[0])-Integer.parseInt(U[0]);
-                tres2=(Integer.parseInt(P[0])+Integer.parseInt(P[1]))-Integer.parseInt(U[1]);
-                tres3=(Integer.parseInt(P[0])+Integer.parseInt(P[1])+Integer.parseInt(P[2]))-Integer.parseInt(U[2]);
-                tres4=(Integer.parseInt(P[0])+Integer.parseInt(P[1])+Integer.parseInt(P[2])+Integer.parseInt(P[3]))-Integer.parseInt(U[3]);
+                tres1=Integer.parseInt(P[0])+Integer.parseInt(U[0]);
+                tres2=(Integer.parseInt(P[1])+tres1);
+                tres3=(Integer.parseInt(P[2])+tres2);
+                tres4=(Integer.parseInt(P[3])+tres3);
                 tpres=(tres1+tres2+tres3+tres4)/4;
 
 

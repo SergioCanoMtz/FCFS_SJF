@@ -655,7 +655,7 @@ public class SJF extends javax.swing.JFrame {
 
                         for (int j = i + 1 ; j < P.length ; j++) {
                         if (Integer.parseInt(P[j]) < Integer.parseInt(P[min])) {
-                            min = j;    //encontramos el menor número
+                            min = j;
                             }
                         }
 
@@ -713,12 +713,18 @@ public class SJF extends javax.swing.JFrame {
                 tret3=(Integer.parseInt(P[0])+Integer.parseInt(P[1])+Integer.parseInt(P[2]))-Integer.parseInt(U[2]);
                 tret4=(Integer.parseInt(P[0])+Integer.parseInt(P[1])+Integer.parseInt(P[2])+Integer.parseInt(P[3]))-Integer.parseInt(U[3]);
                 tpret=(tret1+tret2+tret3+tret4)/4;
-
-                tres1=Integer.parseInt(P[0])-Integer.parseInt(U[0]);
-                tres2=(Integer.parseInt(P[0])+Integer.parseInt(P[1]))-Integer.parseInt(U[1]);
-                tres3=(Integer.parseInt(P[0])+Integer.parseInt(P[1])+Integer.parseInt(P[2]))-Integer.parseInt(U[2]);
-                tres4=(Integer.parseInt(P[0])+Integer.parseInt(P[1])+Integer.parseInt(P[2])+Integer.parseInt(P[3]))-Integer.parseInt(U[3]);
+                
+                tres1=Integer.parseInt(P[0])+Integer.parseInt(U[0]);
+                tres2=(Integer.parseInt(P[1])+tres1);
+                tres3=(Integer.parseInt(P[2])+tres2);
+                tres4=(Integer.parseInt(P[3])+tres3);
                 tpres=(tres1+tres2+tres3+tres4)/4;
+
+                //tres1=Integer.parseInt(P[0])-Integer.parseInt(U[0]);
+                //tres2=(Integer.parseInt(P[0])+Integer.parseInt(P[1]))-Integer.parseInt(U[1]);
+                //tres3=(Integer.parseInt(P[0])+Integer.parseInt(P[1])+Integer.parseInt(P[2]))-Integer.parseInt(U[2]);
+                //tres4=(Integer.parseInt(P[0])+Integer.parseInt(P[1])+Integer.parseInt(P[2])+Integer.parseInt(P[3]))-Integer.parseInt(U[3]);
+                //tpres=(tres1+tres2+tres3+tres4)/4;
 
                 tesp1=0-Integer.parseInt(U[0]);
                 tesp2=Integer.parseInt(P[0])-Integer.parseInt(U[1]);
